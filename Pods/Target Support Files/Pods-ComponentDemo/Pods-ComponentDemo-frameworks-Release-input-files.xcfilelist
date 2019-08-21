@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-ComponentDemo/Pods-ComponentDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework
+${BUILT_PRODUCTS_DIR}/DCHomeModula/DCHomeModula.framework
+${BUILT_PRODUCTS_DIR}/DCTools/DCTools.framework
+${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
+${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework

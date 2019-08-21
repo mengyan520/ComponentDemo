@@ -1,0 +1,6 @@
+framework module DCHomeModula {
+  umbrella header "DCHomeModula-umbrella.h"
+
+  export *
+  module * { export * }
+}

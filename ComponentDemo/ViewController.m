@@ -7,7 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import "DCTwoViewController.h"
+#import <DCHomeViewController.h>
+#import <CTMediator/CTMediator.h>
 @interface ViewController ()
 
 @end
@@ -16,8 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
 }
-
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+   
+    [self.navigationController pushViewController:[[CTMediator sharedInstance]performActionWithUrl:[NSURL URLWithString:@"http://Home/HomeViewController"] completion:nil] animated:YES];
+    NSLog(@"%@",[[CTMediator sharedInstance]performActionWithUrl:[NSURL URLWithString:@"http://Home/HomeViewController"] completion:nil]);
+}
 
 @end
