@@ -24,6 +24,7 @@
    
     [self.navigationController pushViewController:[[CTMediator sharedInstance]performActionWithUrl:[NSURL URLWithString:@"http://Home/HomeViewController"] completion:nil] animated:YES];
     NSLog(@"%@",[[CTMediator sharedInstance]performActionWithUrl:[NSURL URLWithString:@"http://Home/HomeViewController"] completion:nil]);
+    NSLog(@"%@",[[CTMediator sharedInstance]performTarget:@"Home" action:@"HomeViewController" params:nil shouldCacheTarget:nil]);
 }
 
 @end
